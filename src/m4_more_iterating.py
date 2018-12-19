@@ -36,8 +36,8 @@ def main():
     """ Calls the   TEST   functions in this module. """
     # run_test_sum_sequence()
     # run_test_count_items_bigger_than()
-    run_test_count_positive_sines()
-    # run_test_sum_first_n()
+    # run_test_count_positive_sines()
+    run_test_sum_first_n()
 
 
 def run_test_sum_sequence():
@@ -536,6 +536,7 @@ def run_test_count_positive_sines():
     print('Test 1 expected:', expected)
     print('       actual:  ', actual)
 
+
 def count_positive_sines(numbers):
     """
     What comes in:  An sequence of numbers.
@@ -568,6 +569,7 @@ def count_positive_sines(numbers):
         if math.sin(numbers[k]) > 0:
             count = count + 1
     return count
+
 
 def run_test_sum_first_n():
     """ Tests the   sum_first_n   function. """
